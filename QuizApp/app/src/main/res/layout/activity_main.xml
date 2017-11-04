@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A7FFEB"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_message"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="32dp"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:textColor="#3F51B5"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/main_text"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:src="@drawable/down_arrow"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START QUIZ"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="48sp"
+        android:onClick="clickStart"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>

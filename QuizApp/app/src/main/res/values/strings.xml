@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">QUIZ APP</string>
+    <string name="intro_message">Welcome to the <b>Quiz App</b>.
+        This game consists of ten questions to test your knowledge of Africa.\n\n
+        Each questions consists of options A, B and C.
+        To make your choice, enter A, B, or C in the space provided below the question.\n\n
+        Click the button below to start!</string>
+    <string name="welcome_message">Welcome to the <b>Quiz App</b>.
+        How well do you know Africa?\n
+        <b>Let\'s play!</b></string>
+    <string name="question1">1. How many countries do we have in Africa?</string>
+
+    <string name="question2">2. The longest river in Africa is?</string>
+
+    <string name="question3">3. The highest mountain in Africa is?</string>
+
+    <string name="question4">4. What is the name of the oldest country in Africa?</string>
+
+    <string name="question5">5. Which is the most populated country in Africa?</string>
+
+    <string name="question6">6. The first radio broadcast in Africa was in?</string>
+
+    <string name="question7">7. When was ECOWAS established?</string>
+
+    <string name="question8">8. Which country has her alias as \"The giant of Africa\"?</string>
+
+    <string name="question9">9. When did Nigeria became a Republic?</string>
+
+    <string name="question10">10. What is the name of the explorer who discovered river Niger?</string>
+
+    <string name="answers_textview">Click the button below to reveal your scores.</string>
+</resources>

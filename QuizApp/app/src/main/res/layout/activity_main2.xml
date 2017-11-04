@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A7FFEB"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/quiz_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textColor="#3f60b5"
+            android:text="@string/welcome_message"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question1"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_1a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (54)"
+                        android:onClick="onRadioAns1Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (56)"
+                        android:onClick="onRadioAns1Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_1c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (58)"
+                        android:onClick="onRadioAns1Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question2"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_2a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (Niger)"
+                        android:onClick="onRadioAns2Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (Nile)"
+                        android:onClick="onRadioAns2Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_2c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (Benue)"
+                        android:onClick="onRadioAns2Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question3"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/ans_3a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (Atlas)"
+                        android:onClick="onRadioAns3Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (Jabel Marra"
+                        android:onClick="onRadioAns3Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_3c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (Kilimanjaro)"
+                        android:onClick="onRadioAns3Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question4"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_4a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (Egypt)"
+                        android:onClick="onRadioAns4Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_4b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (Ethiopia)"
+                        android:onClick="onRadioAns4Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (Algeria)"
+                        android:onClick="onRadioAns4Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question5"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_5a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (Nigeria)"
+                        android:onClick="onRadioAns5Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_5b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (Ethiopia)"
+                        android:onClick="onRadioAns5Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_5c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (Egypt}"
+                        android:onClick="onRadioAns5Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question6"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_6a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (1926)"
+                        android:onClick="onRadioAns6Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (1923)"
+                        android:onClick="onRadioAns6Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_6c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (1933)"
+                        android:onClick="onRadioAns6Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question7"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_7a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (1974)"
+                        android:onClick="onRadioAns7Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_7b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (1975)"
+                        android:onClick="onRadioAns7Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_7c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (1976)"
+                        android:onClick="onRadioAns7Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question8"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_8a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (Egypt)"
+                        android:onClick="onRadioAns8Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_8b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (Nigeria)"
+                        android:onClick="onRadioAns8Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_8c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (South Africa)"
+                        android:onClick="onRadioAns8Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question9"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_9a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (1963)"
+                        android:onClick="onRadioAns9Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_9b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (1960)"
+                        android:onClick="onRadioAns9Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_9c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (1966)"
+                        android:onClick="onRadioAns9Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/question10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:textColor="#3f60b5"
+                android:text="@string/question10"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans_10a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A. (Vasco Da Gama)"
+                        android:onClick="onRadioAns10Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_10b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. (Mungo Park)"
+                        android:onClick="onRadioAns10Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/ans_10c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C. (Frederick Lugard)"
+                        android:onClick="onRadioAns10Clicked"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/answer_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/answers_textview"
+                android:textColor="#072ca4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/answers_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@xml/buttonshape"
+                android:onClick="getFinalAnswer"
+                android:text="Answers"
+                android:textColor="#02208c"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/go_back_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answers_button"
+                android:layout_centerHorizontal="true"
+                android:text="Done"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_add_pet"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
